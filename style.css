@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --main-font-color: #094B72;
+    --banner-color: #F2FCFF;
+    --banner2-color:  #1282A6;
+    --footer-bottom: #05546D;
+    --f-font: "Playfair Display", serif;
+    --s-font: "Plus Jakarta Sans", sans-serif;
+}
+
+
+/* own css  */
+
+/* Navbar start */
+nav 
+{
+    font-family: var(--s-font);
+}
+/* Navbar End */
+
+
+/* Hero Start */
+.hero 
+{
+    background: #F9F8F9;
+}
+.hero-content h1
+{
+    font-family: var(--f-font);
+    color: var(--main-font-color);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.hero-content p 
+{
+    font-family: var(--s-font);
+}
+
+.hero-btn .btn-primary
+{
+    font-family: var(--s-font);
+    color: #fff;
+    background-color: var(--banner2-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-btn .btn-primary a 
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-image img 
+{
+    max-width: 400px;
+}
+/* Hero End */
+
+
+/* About Start */
+.about 
+{
+    background: var(--banner-color);
+}
+
+.about-content h2
+{
+    font-family: var(--f-font);
+}
+
+.card_section     
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card 
+{
+    flex: 1;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h4 
+{
+    font-family: var(--f-font);
+    font-weight: 750;
+}
+
+.card p 
+{
+    font-family: var(--s-font);
+}
+/* About End */
+
+
+/* countdown start */
+.countdown 
+{
+    background: #1282A6;
+}
+
+.countdown_area 
+{
+    background-image: url(img/Patterns.png);
+    background-size: cover;
+}
+
+.countdown-header h3
+{
+    font-family: var(--f-font);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.countdown-header p 
+{
+    font-family: var(--s-font);
+    color: #fff;
+}
+
+.countdown_content p 
+{
+    font-family: var(--s-font);
+}
+/* countdown End */
