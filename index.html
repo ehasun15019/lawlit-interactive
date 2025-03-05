@@ -11,6 +11,12 @@
     <!-- box icon cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Aos link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <!-- Custom css link -->
     <link rel="stylesheet" href="style.css">
@@ -18,7 +24,7 @@
 </head>
 <body>
     <!-- Header Start -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navigation-wrap">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="img/Logo.png" alt="logo">
@@ -89,7 +95,7 @@
           </div>
   
           <div class="col-lg 6 col-md-6 col-sm-12">
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-up">
               <img src="img/Hero-Image.png" alt="hero image" class="img-fluid">
             </div>
           </div>
@@ -112,7 +118,7 @@
             <div class="col-md-7">
                 <div class="card_section">
                     <div class="card_sector">
-                      <div class="card ">
+                      <div class="card"  data-aos="fade-right">
                         <div class="card-body">
                           <h5 class="card-title">
                             <img src="img/ab-1.png" alt="Circle" class="img-fluid">
@@ -123,7 +129,7 @@
                       </div>
                     </div>
                     <div class="card_sector">
-                      <div class="card ">
+                      <div class="card" data-aos="fade-right">
                         <div class="card-body">
                           <h5 class="card-title">
                             <img src="img/ab-2.png" alt="Circle" class="img-fluid">
@@ -134,7 +140,7 @@
                       </div>
                     </div>
                     <div class="card_sector">
-                      <div class="card ">
+                      <div class="card" data-aos="fade-left">
                         <div class="card-body">
                           <h5 class="card-title">
                             <img src="img/ab-3.png" alt="Circle" class="img-fluid">
@@ -145,7 +151,7 @@
                       </div>
                     </div>
                     <div class="card_sector">
-                      <div class="card ">
+                      <div class="card" data-aos="fade-left">
                         <div class="card-body">
                           <h5 class="card-title">
                             <img src="img/ab-4.png" alt="Circle" class="img-fluid">
@@ -172,30 +178,335 @@
               <h3>Some count that matters</h3>
               <p>Our achievement in the journey depicted in numbers</p>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-              <div class="countdown_content">
-                <h2 class="text-light fs-1 fw-bold">30</h2>
-                <p class="text-light">Clients</p>
+            
+            <section id="counter">
+              <div class="counter_section">
+                <div class="container">
+                  <div class="row text-center">
+                    <div class="col-md-4 col-sm-6 mb-md-0 mb-4 plus">
+                      <h2><span id="count-1"></span></h2>
+                      <p>Clients</p>
+                    </div>
+        
+                    <div class="col-md-4 col-sm-6 mb-md-0 mb-4 plus">
+                      <h2><span id="count-2"></span>+</h2>
+                      <p>Taken business legalities</p>
+                    </div>
+        
+                    <div class="col-md-4 col-sm-6 mb-md-0 mb-4 plus">
+                      <h2><span id="count-3"></span></h2>
+                      <p>Years of Journey</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-              <div class="countdown_content">
-                <h2 class="text-light fs-1 fw-bold">300 +</h2>
-                <p class="text-light">Taken business legalities</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 text-center">
-              <div class="countdown_content">
-                <h2 class="text-light fs-1 fw-bold">8</h2>
-                <p class="text-light">Years of Journey</p>
-              </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
      </div>
     <!-- Countdown End  -->
 
+
+    <!-- testimonial start -->
+     <div class="testimonials">
+       <div class="container testimonial py-5" id="testimonial">
+        <div class="row">
+          <div class="testy_header text-center">
+            <h2>Clients Testimonial</h2>
+          </div>
+  
+          <!-- Swiper -->
+          <div class="swiper mySwiper py-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Incredible Experience</h5>
+                    <p class="card-text">
+                      We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the concept so quickly.
+                    </p>
+                  </div>
+                </div> 
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Anya Tailor Joy</h6>
+                    <p>CEO, SF Industires</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Dependable, Responsive, Professional Partner</h5>
+                    <p class="card-text">Fermin Apps has collaborated with Landify team for several projects such as Photo Sharing Apps and Custom Social Networking Apps. The experience has been pleasant, professional and exceeding our expectations. </p>
+                  </div>
+                </div>
+
+                <div class="cards_review d-flex gap-3 justify-content-center pt-3">
+                  <div class="cards_image">
+                    <img src="img/Photo.png" alt="review">
+                  </div>
+                  <div class="review_content">
+                    <h6 class="fw-bold">Sri Alam</h6>
+                    <p>CEO, Membagongkan GROUP</p>
+                  </div>
+                </div>
+              </div>          
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+       </div>
+     </div>
+    <!-- testimonial End -->
+
+    
+    <!-- faq start -->
+     <div class="faq-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="faq_content py-5 d-flex justify-content-center flex-column align-content-center">
+              <h3>Complex Questions?</h3>
+              <p>
+                Request for a personalized budget for your legal problem. 
+                We will send you a coupe options in 24 hours. You can have free consult ,
+                if a our first customer.
+              </p>
+              <div class="faq_btn">
+                <a href="#" class="btn btn-primary"><i class='bx bxs-phone text-light fw-bold pe-3 fs-4'></i> Call Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="faq_image">
+              <img src="img/men.png" alt="faq image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- faq end -->
+
+
+    <!-- Footer start -->
+     <div class="footer">
+      <div class="container py-5 text-light">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_logo">
+              <img src="./img/logo-2.png" alt="logo">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_content">
+              <h4>Product</h4>
+              <ul class="list-unstyled">
+                <li class="pb-2"><a href="#" class="text-light">Overview</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Features</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Tutorials</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Pricing</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Releases</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_content">
+              <h4>Company</h4>
+              <ul class="list-unstyled">
+                <li class="pb-2"><a href="#" class="text-light">About</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Press</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Careers</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Contact</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Partners</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="footer_content">
+              <h4>Support</h4>
+              <ul class="list-unstyled">
+                <li class="pb-2"><a href="#" class="text-light">Help Center</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Terms of service</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Legal</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Privacy Policy</a></li>
+                <li class="pb-2"><a href="#" class="text-light">Status</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- Footer end -->
+
+
+    <!-- last footer start -->
+     <div class="last_footer">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="last_f_content d-flex align-baseline">
+              <p class="text-light m-0 p-0">© 2021 Lawliet. All rights reserved.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="social_icon">
+              <ul class="list-unstyled d-flex justify-content-end m-0 p-0">
+                <li class="me-3 d-flex justify-content-center align-content-center"><a href="#" class="text-light"><i class='bx bxl-instagram fs-5 '></i></a></li>
+                <li class="me-3 d-flex justify-content-center align-content-center"><a href="#" class="text-light"><i class='bx bxl-dribbble fs-5'></i></a></li>
+                <li class="me-3 d-flex justify-content-center align-content-center"><a href="#" class="text-light"><i class='bx bxl-facebook fs-5'></i></a></li>
+                <li class="me-3 d-flex justify-content-center align-content-center"><a href="#" class="text-light"><i class='bx bxl-youtube fs-5 '></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+    <!-- last footer end -->
 
 
 
@@ -205,5 +516,26 @@
 
     <!-- own js -->
     <script src="main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- Aos js link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
